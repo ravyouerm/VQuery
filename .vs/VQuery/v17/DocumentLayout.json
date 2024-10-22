@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\weblocal\\dotnet\\VQuery\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E78CCD8D-423E-46B7-A868-88F41D769FD1}|VQuery.csproj|d:\\weblocal\\dotnet\\vquery\\databases\\mysql\\dbmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E78CCD8D-423E-46B7-A868-88F41D769FD1}|VQuery.csproj|solutionrelative:databases\\mysql\\dbmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78CCD8D-423E-46B7-A868-88F41D769FD1}|VQuery.csproj|d:\\weblocal\\dotnet\\vquery\\mysqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E78CCD8D-423E-46B7-A868-88F41D769FD1}|VQuery.csproj|solutionrelative:mysqlconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78CCD8D-423E-46B7-A868-88F41D769FD1}|VQuery.csproj|d:\\weblocal\\dotnet\\vquery\\databases\\mysql\\_dbmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E78CCD8D-423E-46B7-A868-88F41D769FD1}|VQuery.csproj|solutionrelative:databases\\mysql\\_dbmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBMYSQL.cs",
+              "DocumentMoniker": "D:\\weblocal\\dotnet\\VQuery\\Databases\\MySQL\\DBMYSQL.cs",
+              "RelativeDocumentMoniker": "Databases\\MySQL\\DBMYSQL.cs",
+              "ToolTip": "D:\\weblocal\\dotnet\\VQuery\\Databases\\MySQL\\DBMYSQL.cs",
+              "RelativeToolTip": "Databases\\MySQL\\DBMYSQL.cs",
+              "ViewState": "AQIAALgAAAAACCxlt94MwM0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:24:12.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_DBMYSQL.cs",
+              "DocumentMoniker": "D:\\weblocal\\dotnet\\VQuery\\Databases\\MySQL\\_DBMYSQL.cs",
+              "RelativeDocumentMoniker": "Databases\\MySQL\\_DBMYSQL.cs",
+              "ToolTip": "D:\\weblocal\\dotnet\\VQuery\\Databases\\MySQL\\_DBMYSQL.cs",
+              "RelativeToolTip": "Databases\\MySQL\\_DBMYSQL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFYAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:23:30.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MySQLConnection.cs",
+              "DocumentMoniker": "D:\\weblocal\\dotnet\\VQuery\\MySQLConnection.cs",
+              "RelativeDocumentMoniker": "MySQLConnection.cs",
+              "ToolTip": "D:\\weblocal\\dotnet\\VQuery\\MySQLConnection.cs",
+              "RelativeToolTip": "MySQLConnection.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAwAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T16:22:29.547Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
