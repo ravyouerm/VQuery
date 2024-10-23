@@ -302,6 +302,53 @@ namespace VQuery.Databases.MySQL
         }
 
 
+        protected bool DataExecuteMysql(string MySQL, MySqlConnection Connection)
+        {
+            using (var cmd = new MySqlCommand(MySQL, Connection))
+            {
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    // Log the exception
+                    Console.WriteLine(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        protected bool DataExecuteMysql(string MySQL, MySqlConnection Connection, Dictionary<string, object>? parameters = null)
+        {
+            using (var cmd = new MySqlCommand(MySQL, Connection))
+            {
+                try
+                {
+                    // Add parameters if provided
+                    if (parameters != null)
+                    {
+                        foreach (var param in parameters)
+                        {
+                            cmd.Parameters.AddWithValue(param.Key, param.Value);
+                        }
+                    }
+
+                    // Execute the command
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    // Log the exception with stack trace for better debugging
+                    Console.WriteLine($"Error: {ex.Message}\nStackTrace: {ex.StackTrace}");
+                    return false;
+                }
+            }
+        }
+
+
         protected void DataBeginMysql(MySqlConnection Connection)
         {
             if (Connection.State == ConnectionState.Open)

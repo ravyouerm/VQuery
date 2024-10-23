@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VQuery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5e4ab8f3084a0977592b41f0dacfcfcccc63586")]
 [assembly: System.Reflection.AssemblyProductAttribute("VQuery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VQuery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,7 +6,7 @@
     <title>VQuery</title>
     <authors>VQuery</authors>
     <description>Package Description</description>
-    <repository type="git" />
+    <repository type="git" commit="b5e4ab8f3084a0977592b41f0dacfcfcccc63586" />
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />

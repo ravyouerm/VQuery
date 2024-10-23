@@ -72,6 +72,17 @@ namespace VQuery
             return _DataDeleteMysql(mysql, parameters);
         }
 
+
+        public bool Execute(string mysql)
+        {
+            return _DataExecuteMysql(mysql);
+        }
+
+        public bool Execute(string mysql, Dictionary<string, object>? parameters = null)
+        {
+            return _DataExecuteMysql(mysql, parameters);
+        }
+
         public void Begin()
         {
             _DataBeginMysql();
