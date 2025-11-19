@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using MySql.Data.MySqlClient;
 
+
 namespace VQuery.Databases.MySQL
 {
     public class DBMYSQL: VariableConverter
@@ -252,6 +253,46 @@ namespace VQuery.Databases.MySQL
                 return false;
             }
         }
+        
+        
+        protected bool DataUpdateMysql(string sql, MySqlConnection connection, Dictionary<string, object>? parameters = null)
+        {
+            try
+            {
+                if (connection == null)
+                    throw new ArgumentNullException(nameof(connection), "Connection is null.");
+
+                bool closeConnection = false;
+
+                if (connection.State != ConnectionState.Open)
+                {
+                    connection.Open();
+                    closeConnection = true;
+                }
+
+                using var cmd = new MySqlCommand(sql, connection);
+
+                if (parameters != null)
+                {
+                    foreach (var param in parameters)
+                    {
+                        cmd.Parameters.AddWithValue(param.Key, param.Value ?? DBNull.Value);
+                    }
+                }
+
+                cmd.ExecuteNonQuery();
+
+                if (closeConnection)
+                    connection.Close();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[MySQL UPDATE Error] {ex.Message}\n{ex.StackTrace}");
+                return false;
+            }
+        }
 
 
 
@@ -347,6 +388,30 @@ namespace VQuery.Databases.MySQL
                 }
             }
         }
+
+        public bool DataExecuteMysqlReturn(string MySQL, MySqlConnection Connection, Dictionary<string, object>? parameters = null)
+        {
+            using MySqlCommand mySqlCommand = new MySqlCommand(MySQL, Connection);
+            try
+            {
+                if (parameters != null)
+                {
+                    foreach (var parameter in parameters)
+                        mySqlCommand.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                }
+
+                int rows = mySqlCommand.ExecuteNonQuery();
+
+                // ✅ Return true only if rows were affected
+                return rows > 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message + "\nStackTrace: " + ex.StackTrace);
+                return false;
+            }
+        }
+
 
 
         protected void DataBeginMysql(MySqlConnection Connection)

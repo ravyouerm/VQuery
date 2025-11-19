@@ -62,6 +62,12 @@ namespace VQuery
             return _DataUpdateMysql(TableName, mysql, parameters);
         }
 
+
+        public bool Update(string mysql, Dictionary<string, object> ?parameters = null)
+        {
+            return _DataUpdateMysql(mysql,parameters);
+        }
+
         public bool Delete(string mysql)
         {
             return _DataDeleteMysql(mysql);
@@ -82,6 +88,15 @@ namespace VQuery
         {
             return _DataExecuteMysql(mysql, parameters);
         }
+
+
+        public bool ExecuteRun(string mysql, Dictionary<string, object>? parameters = null)
+        {
+            return _DataExecuteMysqlReturn(mysql, parameters);
+        }
+
+
+        
 
         public void Begin()
         {

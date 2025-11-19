@@ -134,6 +134,11 @@ namespace VQuery.Databases.MySQL
             return DataUpdateMysql(tableName, mysql, _Connection, parameters);
         }
 
+        protected bool _DataUpdateMysql(string mysql , Dictionary<string, object> ?parameters = null)
+        {
+            return DataUpdateMysql(mysql, _Connection, parameters);
+        }
+
         protected bool _DataDeleteMysql(string mysql)
         {
             return _Connection != null && DataDeleteMysql(mysql, _Connection);
@@ -153,6 +158,11 @@ namespace VQuery.Databases.MySQL
         protected bool _DataExecuteMysql(string mysql, Dictionary<string, object>? parameters = null)
         {
             return _Connection != null && DataExecuteMysql(mysql, _Connection, parameters);
+        }
+
+        protected bool _DataExecuteMysqlReturn(string mysql, Dictionary<string, object>? parameters = null)
+        {
+            return _Connection != null && DataExecuteMysqlReturn(mysql, _Connection, parameters);
         }
 
         protected void _DataBeginMysql()

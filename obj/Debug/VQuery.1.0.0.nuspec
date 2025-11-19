@@ -6,9 +6,9 @@
     <title>VQuery</title>
     <authors>VQuery</authors>
     <description>Package Description</description>
-    <repository type="git" commit="b5e4ab8f3084a0977592b41f0dacfcfcccc63586" />
+    <repository type="git" commit="10f7e9b42446b19e4290a3bf728776b60f52103f" />
     <dependencies>
-      <group targetFramework="net6.0">
+      <group targetFramework="net8.0">
         <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
         <dependency id="MySql.Data" version="8.4.0" exclude="Build,Analyzers" />
         <dependency id="Npgsql" version="8.0.3" exclude="Build,Analyzers" />
@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\weblocal\dotnet\VQuery\bin\Debug\net6.0\VQuery.dll" target="lib\net6.0\VQuery.dll" />
+    <file src="/Users/macbookpro/Projects/webapp/dotnet/vquery/bin/Debug/net8.0/VQuery.dll" target="lib/net8.0/VQuery.dll" />
   </files>
 </package>

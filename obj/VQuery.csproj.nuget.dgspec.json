@@ -1,33 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\weblocal\\dotnet\\VQuery\\VQuery.csproj": {}
+    "/Users/macbookpro/Projects/webapp/dotnet/vquery/VQuery.csproj": {}
   },
   "projects": {
-    "D:\\weblocal\\dotnet\\VQuery\\VQuery.csproj": {
+    "/Users/macbookpro/Projects/webapp/dotnet/vquery/VQuery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\weblocal\\dotnet\\VQuery\\VQuery.csproj",
+        "projectUniqueName": "/Users/macbookpro/Projects/webapp/dotnet/vquery/VQuery.csproj",
         "projectName": "VQuery",
-        "projectPath": "D:\\weblocal\\dotnet\\VQuery\\VQuery.csproj",
-        "packagesPath": "C:\\Users\\Surface Book\\.nuget\\packages\\",
-        "outputPath": "D:\\weblocal\\dotnet\\VQuery\\obj\\",
+        "projectPath": "/Users/macbookpro/Projects/webapp/dotnet/vquery/VQuery.csproj",
+        "packagesPath": "/Users/macbookpro/.nuget/packages/",
+        "outputPath": "/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Surface Book\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/macbookpro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -43,8 +40,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
@@ -74,26 +71,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.32, 6.0.32]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
