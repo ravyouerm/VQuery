@@ -1,0 +1,293 @@
+Renamed Types:
+
+[VQuery]VQuery.VariableConverter/<>c -> [VQuery]VQuery.VariableConverter/A
+{
+	[VQuery]VQuery.VariableConverter/<>c::<IsEmpty>b__13_0[1]( [System.Runtime]System.Object ) -> A
+
+	[VQuery]VQuery.VariableConverter/<>c::.cctor[0]( ) skipped:  special name
+	[VQuery]VQuery.VariableConverter/<>c::.ctor[0]( ) skipped:  special name
+
+	VQuery.VariableConverter/<>c [VQuery]VQuery.VariableConverter/<>c VQuery.VariableConverter/<>c::<>9 -> A
+	System.Func`2<System.Object,System.Boolean> [VQuery]System.Func`2<System.Object,System.Boolean> VQuery.VariableConverter/<>c::<>9__13_0 -> A
+}
+
+[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert/<>c -> [VQuery]VQuery.Databases.SQLServer.SQLVariableConvert/A
+{
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert/<>c::<SQLToEscape>b__5_0[1]( [System.Text.RegularExpressions]System.Text.RegularExpressions.Match ) -> A
+
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert/<>c::.cctor[0]( ) skipped:  special name
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert/<>c::.ctor[0]( ) skipped:  special name
+
+	VQuery.Databases.SQLServer.SQLVariableConvert/<>c [VQuery]VQuery.Databases.SQLServer.SQLVariableConvert/<>c VQuery.Databases.SQLServer.SQLVariableConvert/<>c::<>9 -> A
+	System.Text.RegularExpressions.MatchEvaluator [VQuery]System.Text.RegularExpressions.MatchEvaluator VQuery.Databases.SQLServer.SQLVariableConvert/<>c::<>9__5_0 -> A
+}
+
+[VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c -> [VQuery]VQuery.Databases.MySQL.DBMYSQL/A
+{
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c::<DataInsertMysql>b__7_0[1]( [System.Runtime]System.String ) -> A
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c::<DataUpdateMysql>b__9_0[1]( [System.Runtime]System.Collections.Generic.KeyValuePair`2<[System.Runtime]System.String,[System.Runtime]System.String> ) -> A
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c::<DataUpdateMysql>b__10_0[1]( [System.Runtime]System.Collections.Generic.KeyValuePair`2<[System.Runtime]System.String,[System.Runtime]System.String> ) -> a
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c::<DataUpdateMysql>b__10_1[1]( [System.Runtime]System.Collections.Generic.KeyValuePair`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) -> A
+
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c::.cctor[0]( ) skipped:  special name
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c::.ctor[0]( ) skipped:  special name
+
+	VQuery.Databases.MySQL.DBMYSQL/<>c [VQuery]VQuery.Databases.MySQL.DBMYSQL/<>c VQuery.Databases.MySQL.DBMYSQL/<>c::<>9 -> A
+	System.Func`2<System.String,System.String> [VQuery]System.Func`2<System.String,System.String> VQuery.Databases.MySQL.DBMYSQL/<>c::<>9__7_0 -> A
+	System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.String>,System.String> [VQuery]System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.String>,System.String> VQuery.Databases.MySQL.DBMYSQL/<>c::<>9__9_0 -> A
+	System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.String>,System.String> [VQuery]System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.String>,System.String> VQuery.Databases.MySQL.DBMYSQL/<>c::<>9__10_0 -> a
+	System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>,System.String> [VQuery]System.Func`2<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>,System.String> VQuery.Databases.MySQL.DBMYSQL/<>c::<>9__10_1 -> A
+}
+
+Skipped Types:
+
+[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::ConnectionOpen[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::ConnectionClose[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_SelectDataTablePostgre[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_SelectDataRowPostgre[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_SelectDataValuePostgre[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataInsertPostgre[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataInsertPostgre[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataUpdatePostgre[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataUpdatePostgre[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataDeletePostgre[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataBeginPostgre[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataCommitPostgre[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_DataRollBackPostgre[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL._DBPOSTGRESQL::.ctor[0]( ) skipped:  special name
+
+	Npgsql.NpgsqlConnection [VQuery]Npgsql.NpgsqlConnection VQuery.Databases.PostgreSQL._DBPOSTGRESQL::_connection -> A
+	Microsoft.Extensions.Configuration.IConfigurationRoot [VQuery]Microsoft.Extensions.Configuration.IConfigurationRoot VQuery.Databases.PostgreSQL._DBPOSTGRESQL::config -> A
+
+	System.String [VQuery]System.String VQuery.Databases.PostgreSQL._DBPOSTGRESQL::ESS skipped:  KeepPublicApi option in configuration
+}
+
+[VQuery]VQuery.Databases.MySQL._DBMYSQL skipped:  KeepPublicApi option in configuration
+{
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::BuildConnectionString[1]( [System.Runtime]System.String ) -> A
+
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::.ctor[0]( ) skipped:  special name
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::dbx[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::ConnectionOpen[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::ConnectionClose[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_SelectDataTableMysql[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_SelectDataTableMysql[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_SelectDataRowMysql[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_SelectDataRowMysql[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_SelectDataValueMysql[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_SelectDataValueMysql[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataInsertMysql[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataInsertMysql[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataUpdateMysql[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataUpdateMysql[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataUpdateMysql[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataUpdateMysql[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataDeleteMysql[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataDeleteMysql[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataExecuteMysql[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataExecuteMysql[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataExecuteMysqlReturn[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataBeginMysql[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataCommitMysql[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL._DBMYSQL::_DataRollBackMysql[0]( ) skipped:  KeepPublicApi option in configuration
+
+	MySql.Data.MySqlClient.MySqlConnection [VQuery]MySql.Data.MySqlClient.MySqlConnection VQuery.Databases.MySQL._DBMYSQL::_Connection -> A
+	Microsoft.Extensions.Configuration.IConfigurationRoot [VQuery]Microsoft.Extensions.Configuration.IConfigurationRoot VQuery.Databases.MySQL._DBMYSQL::_config -> A
+}
+
+[VQuery]VQuery.Databases.SQLServer._DBSQL skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataExecuteNonQuerySQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataExecuteTRANSACTIONSQL[1]( [System.Collections]System.Collections.Generic.List`1<[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::ConnectionOpen[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::ConnectionClose[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataInsertSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataInsertSQL[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataUpdateSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataUpdateSQL[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataDeleteSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_SelectDataTableSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_SelectDataTableSQL[4]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.Int32, [System.Runtime]System.Int32 ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_SelectDataRowSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_SelectDataValueSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataBeginSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataCommitSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::_DataRollBackSQL[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer._DBSQL::.ctor[0]( ) skipped:  special name
+
+	Microsoft.Extensions.Configuration.IConfigurationRoot [VQuery]Microsoft.Extensions.Configuration.IConfigurationRoot VQuery.Databases.SQLServer._DBSQL::config -> A
+
+	System.Data.SqlClient.SqlConnection [VQuery]System.Data.SqlClient.SqlConnection VQuery.Databases.SQLServer._DBSQL::_CN skipped:  KeepPublicApi option in configuration
+	System.String [VQuery]System.String VQuery.Databases.SQLServer._DBSQL::ESS skipped:  KeepPublicApi option in configuration
+}
+
+[VQuery]VQuery.VariableConverter skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.VariableConverter::ToString[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToDoubleString[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToIntString[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToString[2]( [System.Runtime]System.DateTime, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToStringDate[2]( [System.Runtime]System.DateTime, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToStringDateTime[2]( [System.Runtime]System.DateTime, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToDate[2]( [System.Runtime]System.Object, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToDateTime[2]( [System.Runtime]System.Object, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToInt[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::ToDouble[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::NumberToText[1]( [System.Runtime]System.Int64 ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::NumberToTextKH[1]( [System.Runtime]System.Int64 ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::NumberToKhNumber[1]( [System.Runtime]System.Double ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::IsEmpty[1]( [System.Data.Common]System.Data.DataRow ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.VariableConverter::.ctor[0]( ) skipped:  special name
+}
+
+[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToString[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToFieldName[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToDate[2]( [System.Runtime]System.String, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToDate[2]( [System.Runtime]System.DateTime, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToDateTime[2]( [System.Runtime]System.DateTime, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToEscape[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToInt[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::SQLToDouble[1]( [System.Runtime]System.Object ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.SQLVariableConvert::.ctor[0]( ) skipped:  special name
+}
+
+[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::SelectDataTablePostgre[2]( [System.Runtime]System.String, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::SelectDataRowPostgre[2]( [System.Runtime]System.String, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::SelectDataValuePostgre[2]( [System.Runtime]System.String, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataInsertPostgre[2]( [System.Runtime]System.String, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataInsertPostgre[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataUpdatePostgre[2]( [System.Runtime]System.String, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataUpdatePostgre[4]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataDeletePostgre[2]( [System.Runtime]System.String, [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataBeginPostgre[1]( [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataCommitPostgre[1]( [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::DataRollBackPostgre[1]( [Npgsql]Npgsql.NpgsqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.PostgreSQL.DBPOSTGRESQL::.ctor[0]( ) skipped:  special name
+}
+
+[VQuery]VQuery.Databases.MySQL.DBMYSQL skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::SelectDataTableMysql[2]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::SelectDataTableMysql[3]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::SelectDataRowMysql[2]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::SelectDataRowMysql[3]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::SelectDataValueMysql[2]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::SelectDataValueMysql[3]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataInsertMysql[2]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataInsertMysql[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataUpdateMysql[2]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataUpdateMysql[4]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataUpdateMysql[4]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataUpdateMysql[3]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataDeleteMysql[2]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataDeleteMysql[3]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataExecuteMysql[2]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataExecuteMysql[3]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataExecuteMysqlReturn[3]( [System.Runtime]System.String, [MySql.Data]MySql.Data.MySqlClient.MySqlConnection, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataBeginMysql[1]( [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataCommitMysql[1]( [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::DataRollBackMysql[1]( [MySql.Data]MySql.Data.MySqlClient.MySqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.MySQL.DBMYSQL::.ctor[0]( ) skipped:  special name
+}
+
+[VQuery]VQuery.Databases.SQLServer.DBSQL skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataInsertSQL[2]( [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataInsertSQL[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataUpdateSQL[2]( [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataUpdateSQL[4]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataDeleteSQL[2]( [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataExecuteNonQuerySQL[2]( [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataExecuteTRANSACTIONSQL[2]( [System.Collections]System.Collections.Generic.List`1<[System.Runtime]System.String>, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::SelectDataTableSQL[2]( [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::SelectDataTableSQL[5]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.Int32, [System.Runtime]System.Int32, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::SelectDataRowSQL[2]( [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::SelectDataValueSQL[2]( [System.Runtime]System.String, [System.Data.SqlClient]System.Data.SqlClient.SqlConnection ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataBeginSQL[2]( [System.Data.SqlClient]System.Data.SqlClient.SqlConnection, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataCommitSQL[2]( [System.Data.SqlClient]System.Data.SqlClient.SqlConnection, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::DataRollBackSQL[2]( [System.Data.SqlClient]System.Data.SqlClient.SqlConnection, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.Databases.SQLServer.DBSQL::.ctor[0]( ) skipped:  special name
+}
+
+[VQuery]VQuery.MySQLConnection skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.MySQLConnection::SelectDataTable[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::SelectDataTable[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::SelectDataRow[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::SelectDataRow[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::SelectDataValue[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::SelectDataValue[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Insert[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Insert[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Update[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Update[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Update[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Update[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Delete[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Delete[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Execute[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Execute[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::ExecuteRun[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.Object> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Begin[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::Commit[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::RollBack[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.MySQLConnection::.ctor[0]( ) skipped:  special name
+}
+
+[VQuery]VQuery.PostgreSQLConnection skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.PostgreSQLConnection::SelectDataTable[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::SelectDataRow[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::SelectDataValue[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::Insert[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::Insert[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::Update[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::Update[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::Delete[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::Begin[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::Commit[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::RollBack[0]( ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.PostgreSQLConnection::.ctor[0]( ) skipped:  special name
+}
+
+[VQuery]VQuery.SQLServerConnection skipped:  KeepPublicApi option in configuration
+{
+
+	[VQuery]VQuery.SQLServerConnection::Insert[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::Insert[2]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::Update[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::Update[3]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::Delete[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::DeleteRecord[3]( [System.Runtime]System.String, [System.Runtime]System.String, [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::DataExecuteNonQuery[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::DataExecuteTRANSACTION[1]( [System.Collections]System.Collections.Generic.List`1<[System.Runtime]System.String> ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::SelectDataTable[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::SelectDataTable[4]( [System.Runtime]System.String, [System.Collections]System.Collections.Generic.Dictionary`2<[System.Runtime]System.String,[System.Runtime]System.String>, [System.Runtime]System.Int32, [System.Runtime]System.Int32 ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::SelectDataRow[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::SelectDataValue[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::Begin[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::Commit[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::RollBack[1]( [System.Runtime]System.String ) skipped:  KeepPublicApi option in configuration
+	[VQuery]VQuery.SQLServerConnection::.ctor[0]( ) skipped:  special name
+}
+
+Renamed Resources:
+
+
+Skipped Resources:
+

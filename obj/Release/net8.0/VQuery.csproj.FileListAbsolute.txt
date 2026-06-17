@@ -1,0 +1,10 @@
+/Users/macbookpro/Projects/webapp/dotnet/vquery/bin/Release/net8.0/VQuery.deps.json
+/Users/macbookpro/Projects/webapp/dotnet/vquery/bin/Release/net8.0/VQuery.dll
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/VQuery.csproj.AssemblyReference.cache
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/VQuery.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/VQuery.AssemblyInfoInputs.cache
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/VQuery.AssemblyInfo.cs
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/VQuery.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/VQuery.dll
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/refint/VQuery.dll
+/Users/macbookpro/Projects/webapp/dotnet/vquery/obj/Release/net8.0/ref/VQuery.dll

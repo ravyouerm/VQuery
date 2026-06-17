@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Obfuscator>
+
+  <Var name="InPath" value="bin/Release/net8.0" />
+  <Var name="OutPath" value="Protected" />
+
+  <Var name="KeepPublicApi" value="true" />
+  <Var name="HidePrivateApi" value="true" />
+
+  <Module file="$(InPath)/VQuery.dll" />
+
+</Obfuscator>

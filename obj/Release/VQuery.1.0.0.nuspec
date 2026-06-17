@@ -3,20 +3,19 @@
   <metadata>
     <id>VQuery</id>
     <version>1.0.0</version>
-    <title>VQuery</title>
-    <authors>VQuery</authors>
+    <authors>Ravy</authors>
     <description>Package Description</description>
-    <repository type="git" commit="10f7e9b42446b19e4290a3bf728776b60f52103f" />
+    <repository type="git" commit="38b67a42e2034c646df904e257cdc0d536c6db7a" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
         <dependency id="MySql.Data" version="8.4.0" exclude="Build,Analyzers" />
         <dependency id="Npgsql" version="8.0.3" exclude="Build,Analyzers" />
-        <dependency id="System.Data.SqlClient" version="4.8.6" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.9.1" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="/Users/macbookpro/Projects/webapp/dotnet/vquery/bin/Debug/net8.0/VQuery.dll" target="lib/net8.0/VQuery.dll" />
+    <file src="/Users/macbookpro/Projects/webapp/dotnet/vquery/bin/Release/net8.0/VQuery.dll" target="lib/net8.0/VQuery.dll" />
   </files>
 </package>

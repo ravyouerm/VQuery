@@ -20,6 +20,7 @@
           "net8.0"
         ],
         "sources": {
+          "/Users/macbookpro/NuGetFeed": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +58,7 @@
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.6, )"
+              "version": "[4.9.1, )"
             }
           },
           "imports": [
