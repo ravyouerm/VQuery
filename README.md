@@ -1,93 +1,416 @@
 # VQuery
 
+[![NuGet](https://img.shields.io/nuget/v/VQuery.svg)](https://www.nuget.org/packages/VQuery)
 
+Lightweight ORM and Database Helper for .NET
 
-## Getting started
+VQuery is a lightweight, high-performance database library designed for .NET applications. It provides a simple API for working with MySQL, PostgreSQL, and SQL Server while maintaining excellent performance through ReflectionCache optimization and lightweight ORM mapping.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Supported Frameworks
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+* .NET 8.0
 
-## Add your files
+## Features
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+✅ MySQL Support
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/ravyouerm/vquery.git
-git branch -M main
-git push -uf origin main
-```
+✅ PostgreSQL Support
 
-## Integrate with your tools
+✅ SQL Server Support
 
-- [ ] [Set up project integrations](https://gitlab.com/ravyouerm/vquery/-/settings/integrations)
+✅ Generic ORM Mapping
 
-## Collaborate with your team
+✅ Async Support
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+✅ Transactions
 
-## Test and Deploy
+✅ Parameterized Queries
 
-Use the built-in continuous integration in GitLab.
+✅ ExecuteScalar<T>()
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+✅ ExecuteNonQuery()
 
-***
+✅ Query<T>()
 
-# Editing this README
+✅ QueryFirst<T>()
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+✅ QuerySingle<T>()
 
-## Suggestions for a good README
+✅ QueryMultiple()
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+✅ Connection Pooling
 
-## Name
-Choose a self-explaining name for your project.
+✅ ReflectionCache Optimization
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+✅ VariableConverter Utilities
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+---
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### Package Manager
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+```powershell
+Install-Package VQuery
+```
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### .NET CLI
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+```bash
+dotnet add package VQuery
+```
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+### Specific Version
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+```bash
+dotnet add package VQuery --version 1.0.5
+```
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+---
+
+## Configuration
+
+### appsettings.json
+
+```json
+{
+  "ConnectionStrings": {
+
+    "MSQLConnection": {
+      "server": "127.0.0.1",
+      "port": "3306",
+      "database": "sampledb",
+      "username": "root",
+      "password": "123456",
+      "pooling": "true",
+      "minimumPoolSize": "5",
+      "maximumPoolSize": "100",
+      "connectionTimeout": "30",
+      "commandTimeout": "60"
+    },
+
+    "POSTGREConnection": {
+      "server": "127.0.0.1",
+      "port": "5432",
+      "database": "sampledb",
+      "username": "postgres",
+      "password": "123456",
+      "pooling": "true",
+      "minimumPoolSize": "5",
+      "maximumPoolSize": "100",
+      "connectionTimeout": "30",
+      "commandTimeout": "60"
+    },
+
+    "SQLSERVERConnection": {
+      "server": "127.0.0.1",
+      "port": "1433",
+      "database": "sampledb",
+      "username": "sa",
+      "password": "123456",
+      "pooling": "true",
+      "minimumPoolSize": "5",
+      "maximumPoolSize": "100",
+      "connectionTimeout": "30",
+      "commandTimeout": "60",
+      "trustServerCertificate": "true"
+    }
+  }
+}
+```
+
+---
+
+## Quick Start
+
+### MySQL
+
+```csharp
+using VQuery;
+
+using var db = new MySQLConnection();
+
+db.ConnectionOpen("MYSQLConnection");
+
+var users =
+    db.Query<User>(
+        "SELECT * FROM users");
+```
+
+### PostgreSQL
+
+```csharp
+using VQuery;
+
+using var db = new PostgreSQLConnection();
+
+db.ConnectionOpen("POSTGREConnection");
+
+var users =
+    db.Query<User>(
+        "SELECT * FROM users");
+```
+
+### SQL Server
+
+```csharp
+using VQuery;
+
+using var db = new SQLServerConnection();
+
+db.ConnectionOpen("SQLSERVERConnection");
+
+var users =
+    db.Query<User>(
+        "SELECT * FROM users");
+```
+
+---
+
+## Transactions
+
+```csharp
+db.Begin();
+
+try
+{
+    db.Insert(
+        "users",
+        new Dictionary<string,string>
+        {
+            { "name", "John" }
+        });
+
+    db.Update(
+        "users",
+        new Dictionary<string,string>
+        {
+            { "name", "David" }
+        },
+        "id=1");
+
+    db.Commit();
+}
+catch
+{
+    db.RollBack();
+}
+```
+
+---
+
+## CRUD Operations
+
+### SelectDataTable
+
+```csharp
+DataTable dt =
+    db.SelectDataTable(
+        "SELECT * FROM users");
+```
+
+### SelectDataRow
+
+```csharp
+DataRow row =
+    db.SelectDataRow(
+        "SELECT * FROM users WHERE id=1");
+```
+
+### SelectDataValue
+
+```csharp
+string value =
+    db.SelectDataValue(
+        "SELECT name FROM users WHERE id=1");
+```
+
+### SelectDataScalar
+
+```csharp
+int total =
+    db.ExecuteScalar<int>(
+        "SELECT COUNT(*) FROM users");
+```
+
+### Insert
+
+```csharp
+db.Insert(
+    "users",
+    new Dictionary<string,string>
+    {
+        { "name", "John" },
+        { "email", "john@test.com" }
+    });
+```
+
+### Update
+
+```csharp
+db.Update(
+    "users",
+    new Dictionary<string,string>
+    {
+        { "name", "David" }
+    },
+    "id=1");
+```
+
+### Delete
+
+```csharp
+db.Delete(
+    "DELETE FROM users WHERE id=@id",
+    new()
+    {
+        ["@id"] = 1
+    });
+```
+
+---
+
+## ORM Mapping
+
+```csharp
+public class User
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; }
+
+    public string Email { get; set; }
+}
+```
+
+```csharp
+var users =
+    db.Query<User>(
+        "SELECT * FROM users");
+```
+
+---
+
+## Async Support
+
+```csharp
+var users =
+    await db.QueryAsync<User>(
+        "SELECT * FROM users");
+```
+
+```csharp
+var user =
+    await db.QueryFirstAsync<User>(
+        "SELECT * FROM users WHERE id=@id",
+        new()
+        {
+            ["@id"] = 1
+        });
+```
+
+```csharp
+int total =
+    await db.ExecuteScalarAsync<int>(
+        "SELECT COUNT(*) FROM users");
+```
+
+---
+
+## QueryMultiple
+
+```csharp
+string sql =
+@"
+SELECT * FROM users;
+SELECT * FROM roles;
+";
+
+DataSet ds =
+    db.QueryMultiple(sql);
+
+DataTable users = ds.Tables[0];
+DataTable roles = ds.Tables[1];
+```
+
+---
+
+## VariableConverter
+
+```csharp
+db.ToInt("100");
+
+db.ToDouble("123.45");
+
+db.ToString(DateTime.Now);
+
+db.ToDate("01-01-2026");
+
+db.NumberToText(1000);
+
+db.NumberToTextKH(1000);
+```
+
+---
+
+## Performance
+
+VQuery automatically uses ReflectionCache for:
+
+* Query<T>()
+* QueryAsync<T>()
+* QueryFirst<T>()
+* QuerySingle<T>()
+
+Benefits:
+
+* Faster object mapping
+* Reduced reflection overhead
+* Lower CPU usage
+* Better scalability
+
+---
+
+## Links
+
+GitHub
+
+https://github.com/ravyouerm/VQuery
+
+NuGet
+
+https://www.nuget.org/packages/VQuery
+
+---
+
+## Version 1.0.5
+
+### Added
+
+* PostgreSQL Support
+* SQL Server Support
+* Async Methods
+* QueryMultiple
+* ReflectionCache
+* Connection Pooling
+* ExecuteScalar<T>()
+* ExecuteNonQuery()
+
+### Improved
+
+* MySQL Performance
+* PostgreSQL Performance
+* SQL Server Performance
+* Documentation
+
+### Fixed
+
+* Dictionary<string,string> compatibility overloads
+* MySQL connection string handling
+* ORM mapping improvements
+
+---
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+MIT License
