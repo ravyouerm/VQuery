@@ -87,9 +87,62 @@ namespace VQuery
             }
         }
 
+        // FIX: ParseExact only accepts the single Format given, so any caller who
+        // passes a value in a different (but common) shape than the default
+        // "dd-MM-yyyy" - e.g. ISO "yyyy-MM-dd", or a value that already carries a
+        // time component - fell through to the catch block and silently returned
+        // DateTime.Today. That masks real bugs (wrong data, wrong format string)
+        // behind a plausible-looking date. Now we try the caller's Format first
+        // (unchanged behavior for existing callers), then fall back to a short list
+        // of common formats and finally a culture-invariant DateTime.TryParse before
+        // giving up.
+        private static readonly string[] FallbackDateFormats =
+        {
+            "yyyy-MM-dd",
+            "yyyy/MM/dd",
+            "dd-MM-yyyy",
+            "MM/dd/yyyy",
+            "dd/MM/yyyy",
+            "yyyy-MM-dd HH:mm:ss",
+            "yyyy-MM-ddTHH:mm:ss",
+            "dd-MM-yyyy HH:mm:ss",
+            "MM/dd/yyyy HH:mm:ss"
+        };
+
+        private static bool TryParseAnyFormat(string input, string preferredFormat, out DateTime result)
+        {
+            if (DateTime.TryParseExact(
+                    input,
+                    preferredFormat,
+                    System.Globalization.CultureInfo.InvariantCulture,
+                    System.Globalization.DateTimeStyles.None,
+                    out result))
+            {
+                return true;
+            }
+
+            foreach (string format in FallbackDateFormats)
+            {
+                if (DateTime.TryParseExact(
+                        input,
+                        format,
+                        System.Globalization.CultureInfo.InvariantCulture,
+                        System.Globalization.DateTimeStyles.None,
+                        out result))
+                {
+                    return true;
+                }
+            }
+
+            return DateTime.TryParse(
+                input,
+                System.Globalization.CultureInfo.InvariantCulture,
+                System.Globalization.DateTimeStyles.None,
+                out result);
+        }
+
         public DateTime ToDate(object? s, string Format = "dd-MM-yyyy")
         {
-
             try
             {
                 if (s == null)
@@ -98,15 +151,18 @@ namespace VQuery
                 }
                 else
                 {
-                    DateTime dt = DateTime.ParseExact(ToString(s), Format, System.Globalization.CultureInfo.InvariantCulture);
-                    return dt;
+                    if (TryParseAnyFormat(ToString(s), Format, out DateTime dt))
+                    {
+                        return dt.Date;
+                    }
+
+                    return DateTime.Today;
                 }
             }
             catch
             {
                 return DateTime.Today;
             }
-
         }
 
         public DateTime ToDateTime(object? s, string Format = "dd-MM-yyyy HH:mm:ss")
@@ -119,18 +175,26 @@ namespace VQuery
                 }
                 else
                 {
+                    if (TryParseAnyFormat(ToString(s), Format, out DateTime dt))
+                    {
+                        return dt;
+                    }
 
-                    DateTime dt = DateTime.ParseExact(ToString(s), Format, System.Globalization.CultureInfo.InvariantCulture);
-                    return dt;
+                    return DateTime.Today;
                 }
             }
             catch
             {
                 return DateTime.Today;
             }
-
         }
 
+        // FIX: Int32.Parse rejects any string with a decimal point ("88.90"),
+        // throwing a FormatException that was silently swallowed and turned into 0.
+        // Now we parse as a decimal first (handles "88.90", "42.33", "1,234.5" after
+        // the existing comma-stripping) and truncate to an int, matching what most
+        // callers expect from a "ToInt" conversion. Plain integer strings still work
+        // exactly as before.
         public int ToInt(object? s)
         {
             try
@@ -142,7 +206,22 @@ namespace VQuery
                 else
                 {
                     string ss = this.ToString(s).Replace("'", "").Replace(" ", "").Replace(",", "");
-                    return Int32.Parse(ss);
+
+                    if (Int32.TryParse(ss, out int intResult))
+                    {
+                        return intResult;
+                    }
+
+                    if (decimal.TryParse(
+                            ss,
+                            System.Globalization.NumberStyles.Float,
+                            System.Globalization.CultureInfo.InvariantCulture,
+                            out decimal decResult))
+                    {
+                        return (int)decResult;
+                    }
+
+                    return 0;
                 }
             }
             catch
